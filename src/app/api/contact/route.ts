@@ -28,8 +28,8 @@ export async function POST(req: Request) {
   }
 }
 // 例如在某個客製化 hook 或頁面提交時：
-await fetch('/api/contact', {
+/*await fetch('/api/contact', {
   method: 'POST',
   headers: { 'content-type': 'application/json' },
   body: JSON.stringify({ name, email, message }),
-})
+}*/

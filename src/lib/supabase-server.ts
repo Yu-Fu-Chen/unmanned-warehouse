@@ -7,4 +7,6 @@ if (!supabaseUrl || !supabaseServiceRoleKey) {
   throw new Error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE')
 }
 
-export const supabaseServer = createClient(supabaseUrl, supabaseServiceRoleKey)
+export function createServerSupabase() {
+  return createClient(supabaseUrl, supabaseServiceRoleKey);
+}
