@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
     const supabase = createServerSupabase()
     const { error } = await supabase.storage
-      .from('public-assets')
+      .from('official')
       .upload(key.replace('public-assets/', ''), bytes, {
         contentType: file.type || 'application/octet-stream',
         upsert: false
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     if (error) throw error
 
     // 公開 bucket 可直接組 URL（Supabase 會提供 public URL）
-    const { data } = supabase.storage.from('public-assets').getPublicUrl(key.replace('public-assets/', ''))
+    const { data } = supabase.storage.from('official').getPublicUrl(key.replace('public-assets/', ''))
 
     return NextResponse.json({ ok: true, key, url: data.publicUrl })
   } catch (err) {

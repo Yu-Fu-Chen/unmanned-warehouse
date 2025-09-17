@@ -23,3 +23,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false }, { status: 500 })
   }
 }
+//前端表單送出（示例）
+/*const form = new FormData()
+form.append('file', fileInput.files![0])
+const res = await fetch('/api/upload', { method: 'POST', body: form })
+const json = await res.json()
+// json.url 可直接顯示圖片*/
