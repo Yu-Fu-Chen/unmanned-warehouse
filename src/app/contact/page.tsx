@@ -22,6 +22,8 @@ export default function ContactPage() {
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
 
+    plausible("contact_submit", { props: { message_len: payload.message.length } });
+  
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -64,7 +66,6 @@ export default function ContactPage() {
         </div>
         <button
           disabled={loading}
-          onClick={() => plausible('contact_click')}
           className="w-full rounded-xl bg-black px-4 py-2 text-white disabled:opacity-50"
         >
           {loading ? "送出中…" : "送出"}
