@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { usePlausible } from 'next-plausible';
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [ok, setOk] = useState<boolean | null>(null);
   const [error, setError] = useState<string>("");
+  const plausible = usePlausible();
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -62,6 +64,7 @@ export default function ContactPage() {
         </div>
         <button
           disabled={loading}
+          onClick={() => plausible('contact_click')}
           className="w-full rounded-xl bg-black px-4 py-2 text-white disabled:opacity-50"
         >
           {loading ? "送出中…" : "送出"}
