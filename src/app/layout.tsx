@@ -3,7 +3,7 @@ import "./globals.css";
 import PlausibleProvider from 'next-plausible';
 
 export const metadata = {
-  title: "Air machine 先進科技",
+  title: "AirClean 先進科技",
   description: "15 分鐘極速潔淨，專業的服務品質與售後服務",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         <footer className="mt-16 border-t bg-white">
           <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-gray-500">
-            © {new Date().getFullYear()} Air machine
+            © {new Date().getFullYear()} AirClean
           </div>
         </footer>
       </body>

@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       <section className="rounded-2xl bg-white p-10 shadow-sm">
-        <h1 className="text-3xl text-gray-500 font-bold">沃爾科技，立於2007年</h1>
+        <h1 className="text-3xl text-gray-500 font-bold">AirClean，立於2025年</h1>
         <p className="mt-2 text-gray-600">清新的空氣，需要好的氣體微污染監測系統</p>
         <div className="mt-6 flex gap-3">
           <Link href="/contact" className="rounded-xl bg-black px-5 py-3 text-white">
