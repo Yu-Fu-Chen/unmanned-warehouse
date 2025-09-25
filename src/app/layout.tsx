@@ -1,10 +1,10 @@
 import Link from "next/link";
 import "./globals.css";
-import PlausibleProvider from 'next-plausible'
+import PlausibleProvider from 'next-plausible';
 
 export const metadata = {
-  title: "Air machine 無人機科技",
-  description: "15 分鐘極速外送，端到端無人機配送方案",
+  title: "Air machine 先進科技",
+  description: "15 分鐘極速潔淨，專業的服務品質與售後服務",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

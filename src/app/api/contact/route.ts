@@ -4,7 +4,7 @@ import { createServerSupabase } from '@/lib/supabase-server'
 
 const schema = z.object({
   name: z.string().min(1),
-  email: z.string().email(),
+  email: z.string().min(8),
   message: z.string().min(10).max(2000),
 })
 

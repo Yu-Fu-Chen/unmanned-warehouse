@@ -44,18 +44,18 @@ export default function ContactPage() {
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <h1 className="text-2xl font-bold">聯絡我們</h1>
+      <h1 className="text-2xl text-black-800 font-bold">聯絡我們</h1>
       <form onSubmit={onSubmit} className="space-y-4 rounded-2xl bg-white p-6 shadow-sm">
         <div>
-          <label className="block text-sm font-medium">姓名</label>
+          <label className="block text-sm text-gray-600 font-medium">姓名</label>
           <input name="name" required className="mt-1 w-full rounded-lg border px-3 py-2" />
         </div>
         <div>
-          <label className="block text-sm font-medium">Email</label>
+          <label className="block text-sm text-gray-600 font-medium">Email</label>
           <input type="email" name="email" required className="mt-1 w-full rounded-lg border px-3 py-2" />
         </div>
         <div>
-          <label className="block text-sm font-medium">訊息</label>
+          <label className="block text-sm text-gray-600 font-medium">訊息</label>
           <textarea
             name="message"
             minLength={10}
