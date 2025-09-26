@@ -3,8 +3,8 @@ import "./globals.css";
 import PlausibleProvider from 'next-plausible';
 
 export const metadata = {
-  title: "AirClean 先進科技",
-  description: "15 分鐘極速潔淨，專業的服務品質與售後服務",
+  title: "SuperLaser 先進科技",
+  description: "高功率光纖雷射與衛星雷射通訊",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b bg-white">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
             <Link href="/" className="text-gray-500 font-semibold">
-              AirClean
+              SuperLaser
             </Link>
             <div className="flex items-center gap-4 text-sm">
               <Link href="/" className="text-gray-500 hover:underline">首頁</Link>
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         <footer className="mt-16 border-t bg-white">
           <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-gray-500 font-semibold">
-            © {new Date().getFullYear()} AirClean
+            © {new Date().getFullYear()} SuperLaser
           </div>
         </footer>
       </body>
